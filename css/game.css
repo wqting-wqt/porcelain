@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* CSS Document */
+bady {
+    margin: 0;
+}
+#app {
+    width: 640px;
+    height: 960px;
+}
+.content {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.content:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: blur(5px);
+    background: url("../html/image/瓷器背景图.jpg") no-repeat;
+    background-size: cover;
+    z-index: 2;
+}
+.main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    font-size: 70px;
+    text-align: center;
+    padding-top: 5px;
+}
+.btn {
+    font-size: 40px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    background-color: #5524CC;
+    color: #FFFFFF;
+    border: none;
+}
+.imgbox {
+    width: 400px;
+    height: 600px;
+    background: #5524CC;
+    margin: 0 auto;
+    margin-top: 50px;
+    position: relative;
+}
+.imgbox_list {
+    width: 100px;
+    height: 150px;
+    background-color: #12D158;
+    position: absolute;
+    background-image: url("../html/image/1.jpg");
+    transition: all .5s ease 0s;
+}
+.yuantu {
+    position: absolute;
+    top: 240px;
+    left: 120px;
+    z-index: 10;
+}
